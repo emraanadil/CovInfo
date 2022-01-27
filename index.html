@@ -1,10 +1,152 @@
 <html>
 	<head>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 		<title>
-			Hello World
+			CovInfo
 		</title>
 	</head>
 	<body>
-		Write your code for the submission by editing this file
+		<div class="navbar">
+			<ul>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#tips">Tips</a></li>
+				<li><a href="#symptoms">Symptoms</a></li>
+				<li><a href="#faqs">FAQ's</a></li>
+				<li><a href="#about">About</a></li>
+			  </ul>
+
+			</div>
+		<div class="container">
+			
+			<section class="banner" id="banner">
+				<p>Confused during these covid times as what to do? Get tips on how to Protect yourself against Covid!</p>
+
+			</section>
+			<section class="banner1">
+				Don't worry! We've got you covered.
+			</section>
+			<img class=bannerimg src="boy.png" alt="corona">
+			
+			<section class="tips" id="tips">
+				
+				<h1 style="text-align:center;">Tips</h1>
+				
+				<div class="box1">
+					
+					<img src="handwash.png" alt="">
+					<h4>Wash Hands</h4>
+				</div>
+			</br>
+			<a name="tips"></a>
+
+				<div class="box2">
+					<img src="mask.png" alt="">
+					<h4>Wear Mask</h4>
+				</div>
+			</section>
+			<div class="youtube">
+			<iframe width="700" height="400" src="https://www.youtube.com/embed/i0ZabxXmH4Y" title="YouTube video player" 
+			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen></iframe>
+			</div>
+				<div class="symptoms" id="symptoms"> 
+				
+					<h2>Symptoms</h2>
+					<table class="symptoms-table" >
+			
+						<thead>
+							<tr>
+								<th>Symptom</th>
+								<th>Severity</th>
+								<th>Advice</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Fever</td>
+								<td>Mild</td>
+								<td>Drink plenty of fluids, including water</td>
+							</tr>
+							<tr>
+								<td>Cough</td>
+								<td>Mild</td>
+								<td>Drink plenty of fluids, including water</td>
+							</tr>
+							<tr>
+								<td>Cold</td>
+								<td>Mild</td>
+								<td>Drink plenty of fluids, including water</td>
+							</tr>
+							<tr>
+								<td>Fatigue</td>
+								<td>Mild</td>
+								<td>Drink plenty of fluids, including water</td>
+							</tr>
+						</tbody>
+					</table>
+				
+				</div>
+				<div class="faqs" id="faqs">
+					<h1>Frequently Asked Questions</h1>
+					<button class="accordion">What is Covid19?</button>
+					<div class="panel">
+					<p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more 
+						likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+					</div>
+
+					<button class="accordion">Should I use soap and water or hand sanitizer to protect myself?</button>
+					<div class="panel">
+					<p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.
+
+					</p>
+					</div>
+
+					<button class="accordion">What are the symptoms and complications that COVID-19 can cause?</button>
+					<div class="panel">
+					<p>People with COVID-19 have reported a wide range of symptoms – from mild symptoms 
+						to severe illness. Symptoms may appear 2-14 days after exposure to the virus. 
+						If you have fever, cough, or other symptoms, you might have COVID-19. For more info, visit <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO </a>
+
+</p>
+					</div>
+
+
+				</div>
+				<div class="footer" id="about">
+					<span>Reach out to me :  </span>
+					<a href="https://linkedin.com/in/emraanadil" target="_blank" class="fa fa-linkedin"></a>
+					<a href="mailto:emraanaadil@gmail.com" class="fa fa-envelope"></a>
+
+
+				</div>
+	
+				</div>
+		
+				<script>
+				var acc = document.getElementsByClassName("accordion");
+				var i;
+				
+				for (i = 0; i < acc.length; i++) {
+				  acc[i].addEventListener("click", function() {
+					/* Toggle between adding and removing the "active" class,
+					to highlight the button that controls the panel */
+					this.classList.toggle("active");
+				
+					/* Toggle between hiding and showing the active panel */
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+					  panel.style.display = "none";
+					} else {
+					  panel.style.display = "block";
+					}
+				  });
+				}
+				</script>
+
+
 	</body>
 </html>

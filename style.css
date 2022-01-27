@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+    font-family: 'Outfit',sans-serif;
+}
+.nav{
+  display: flex;
+  align-items: center;
+}
+ul { 
+  
+    text-align: center;
+    list-style-type: none;
+    z-index: 1;
+    width: 100%;
+    background: #6b2f4e;
+    position: fixed;
+
+}
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li {
+    margin: 2px;
+    padding: 2px;
+    float: left;
+    margin-left: 22px;
+    text-align: center;
+    border: 1px solid rgb(157, 179, 171);
+    border-radius: 10px;
+    align-self: center;
+
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li:hover {
+    background-color: rgba(230, 103, 103, 0.788);
+    cursor: pointer;
+  }
+
+  .container{
+    /* position: absolute; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    top: 59px;
+    background: #4C0027;
+    padding: 20px;
+    
+  }
+
+  .banner{
+    position: relative;
+    width: 60%;
+    height: 20%;
+    left: 10px;
+    top: 70px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    
+    color: #E8AFCE;
+  }
+  .banner1{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 20px;
+    top: 347px;
+    font-weight: bold;
+    font-size: 97px;
+    line-height: 117px;
+    color: rgb(255, 255, 255);
+  }
+  .bannerimg{
+    position: absolute;
+    right: 0%;
+    top: 16.16%;
+    opacity: 0.4;
+    width: 500px;
+    height: 500px;
+    background: #4C0027;
+    
+    
+    /* background: #F5F5F5; */
+  }
+  .tips{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 85%;
+    height: 41%;
+    top: 90%;
+    margin: auto;
+    background: lemonchiffon;
+    /* border: 1px solid #E8AFCE; */
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .tips h1{
+    text-align: center;
+    background: #2ea965;
+    line-height: 1.5;
+    border: 2px solid bisque;
+    border-radius: 15px;
+  }
+  .box1, .box2{
+    height: inherit;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .box1 img{
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    max-width: 50%;
+    height: 85%;
+
+  }
+  .box2 img{
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    max-width: 50%;
+    height: 85%;
+
+  }
+  .box1 h4{
+    position: absolute;
+    top: 290px;
+    right: 37px;
+    background:#2ea965;
+    font-size: 30px;
+  }
+  .box2 h4{
+    position: absolute;
+    top: 290px;
+    left: 37px;
+    background: #2ea965;
+    font-size: 30px;
+  }
+  .symptoms {
+    position: relative;
+    top: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid darkgray;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    line-height: 2;
+    font-size: xx-large;
+
+}
+.symptoms-table,thead,tbody{
+  border: 1px solid black;
+    width: 80%;
+    /* border-collapse: collapse; */
+    text-align: center;
+    font-size: xx-large;
+    padding: 3px;
+    /* border-radius: 31px; */
+    border-style: dashed;
+}
+  
+  thead{
+    border-bottom: 4px solid black;
+  }
+  tr:nth-child(odd) {background-color: whitesmoke;}
+  th {
+    background-color: #3f4df3;
+    color: white;
+  }
+
+  .faqs{
+    position: relative;
+    top: 750px;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    background-color: #92b7d3;
+    align-items: center;
+  }
+  .youtube{
+    position: relative;
+    top: 695px;
+    text-align: center;
+    padding: 35px;
+    background: lemonchiffon;
+    width: 85%;
+    margin:auto;
+
+  }
+  .footer{
+    position: relative;
+    top: 750;
+    text-align: center;
+    background: darkgrey;
+    color: black;
+    font-size: x-large;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: larger;
+  }
+  
+ .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 10 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .accordion:after {
+    content: '\02304'; 
+    font-size: 20px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2303"; 
+  }
